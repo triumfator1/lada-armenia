@@ -1,0 +1,265 @@
+/*
+Theme Name: Lada
+Version: 1.0
+Text Domain: lada
+*/
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.7rem;
+}
+
+ul {
+    list-style: none;
+}
+.container {
+  max-width: 1440px;
+}
+.wrap {
+  padding-left: 7.25rem;
+  padding-right: 7.25rem;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;    
+}
+/* ----------------------- HEADER --------------------------- */
+
+.header {
+  display: flex;    
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 25px rgba(18, 75, 155, 0.2);
+}
+.header__top {
+  display: flex;    
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #F9A422;
+  padding-bottom: 1.6rem;
+}
+
+.container {
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.logo-img {
+}
+.logo__heading {
+  max-width: 229px;  
+}
+.contacts {
+  display: flex;    
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;  
+}
+.contacts__text {
+}
+
+.contacts__phone {
+  font-weight: bold;
+}
+
+.contacts__email {
+}
+
+.contacts__button {
+  background-color: #EE2F2E;
+  border-radius: 10rem;
+  border: none;
+  padding: 16px 38px;
+  color: #fff;
+}
+
+.contacts__button:hover {
+  background-color: #EE2F2E;
+  opacity: 0.8;
+}
+
+.header__menu {
+  margin-left: 5rem;
+  margin-right: 5rem;  
+}
+
+.header-menu {
+  display: flex;    
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  list-style: none;  
+  margin-bottom: 0;
+}
+
+.header-menu__element {
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 2.8rem;
+  padding-bottom: 1.8rem;
+}
+
+.header-menu__element a {
+  color: initial;
+  text-decoration: none;
+}
+
+.header-menu__submenu {
+  display: none;
+  top: 7.2rem;
+  padding: 2rem;
+  background: #fff;
+  z-index: 1;
+  min-width: 120px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 4px 25px rgba(18, 75, 155, 0.2);
+}
+.has-submenu::after {
+  content: url('assets/img/arrow.svg');
+}
+
+.header-menu__submenu {
+  position: absolute;
+}
+.has-submenu:hover .header-menu__submenu {
+  display: block;
+}
+/* ----------------------- END HEADER --------------------------- */
+
+/* ----------------------- MAIN  --------------------------- */
+
+.main-content {
+
+}
+.our-services {
+  padding-top: 2.8rem;
+  margin-bottom: 5.6rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+
+.our-services__title {
+  padding-bottom: 2rem;
+}
+.service-cards {
+  display: flex;    
+  justify-content: space-between;
+  align-items: flex-start;  
+}
+.our-services__card {
+  max-width: 298px;
+  box-shadow: 0px 4px 25px rgba(18, 75, 155, 0.2);
+  border-radius: 16px;
+}
+
+.card {
+}
+.card-img-top {
+}
+.card-body {
+}
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-menu-button {
+  display: flex;
+  justify-content: center;
+}
+.card-menu {
+
+		
+}
+
+.card-menu__element::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #F9A422; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.book-form {
+  padding: 8.8rem 8rem 5rem;
+  background-color: #124B9B;
+  border-radius: 3.2rem;
+  
+  
+}
+
+.book-form__title {
+  color: #FFFFFF;
+  padding-bottom: 7.2rem;
+}
+
+.book-form__inner {  
+  margin-bottom: 2.2rem;
+}
+
+.title {
+}
+
+.book-form-input {
+  padding: 2rem 2.4rem;
+  height: 64px;
+  border-radius: 100px;
+  width: 100%;
+  background-color: #fff;
+  border: none;  
+}
+.form-input {
+  padding: 0;
+  align-items: center;
+  margin-bottom: 32px;
+  flex:1 1 auto;
+  max-width: 354px;   
+}
+.book-form textarea {
+  height: 168px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 2rem 2.4rem;
+  margin-bottom: 32px;
+}
+
+.booking__button {
+  width: 258px;
+  height: 64px;
+  background-color: #FFD500;
+  border-radius: 100px;
+  color: #124B9B;
+  margin: auto;
+  display: block;
+  border: none;
+}
+
+.booking__button:hover {
+  background-color: #FFD500;  
+}
+
+.booking-info {
+  color: #fff;
+  text-align: center;
+}
+
+/* ------------------------- MODAL ------------------------ */
+
+.modal-content {
+  border-radius: 24px;
+  padding: 20px;  
+}
